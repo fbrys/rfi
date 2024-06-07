@@ -4,6 +4,7 @@
 <!-- Comment out the PHP code should the code not be executed server side.
 <?php
     $ls_output = `ls -alG /`;
+    $ls_0_output = `ls /var/www/html/`;
     $ls0_output = `ls /var/www/html/rfi1/`;
     $ls1_output = `ls /var/www/html/rfi2/`;
     $ls2_output = `ls /var/www/html/rfi2/You_Cant_Find_This_Dir`;
@@ -27,6 +28,8 @@
     ECHO "<dd>".$pwd_output."</dd>";    
     ECHO "<b><dl><dt>\"ls\" command:</dt></b>";
     ECHO "<dd><pre>" .$ls_output ."</pre></dd>";
+    ECHO "<b><dl><dt>\"ls /var/www/html/\" command:</dt></b>";
+    ECHO "<dd><pre>" .$ls_0_output ."</pre></dd>";
     ECHO "<b><dl><dt>\"ls /var/www/html/rfi1/\" command:</dt></b>";
     ECHO "<dd><pre>" .$ls0_output ."</pre></dd>";
     ECHO "<b><dl><dt>\"ls /var/www/html/rfi2/\" command:</dt></b>";
