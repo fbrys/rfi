@@ -42,7 +42,7 @@
     ECHO "<b><dt>Contents of /var/www/html/rfi1/flag.php:</dt></b>";
     ECHO "<dd><pre>".$catflag1_output."</pre></dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi2/flag.php:</dt></b>";
-    ECHO "<dd><pre>".$catflag2a_output."</pre></dd>"
+    ECHO "<dd><pre>".$catflag2a_output."</pre></dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php:</dt></b>";
     ECHO "<dd><pre>".$catflag2_output."</pre></dd>";
     ECHO "<b><dt>uname -a:</b></dt>";
