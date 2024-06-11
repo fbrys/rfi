@@ -39,6 +39,8 @@
     ECHO "<dd><pre>" .$ls1_output ."</pre></dd>";
     ECHO "<b><dl><dt>\"ls /var/www/html/rfi2/You_Cant_Find_This_Dir\" command:</dt></b>";
     ECHO "<dd><pre>" .$ls2_output ."</pre></dd>";
+    ECHO "<b><dl><dt>\"ls /var/www/html/transparent\" command:</dt></b>";
+    ECHO "<dd><pre>" .$ls3_output ."</pre></dd>";
     ECHO "<b><dt>Contents of /etc/hosts:</dt></b>";
     ECHO "<dd><pre>".$catetchosts_output."</pre></dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi1/flag.php:</dt></b>";
@@ -47,6 +49,8 @@
     ECHO "<dd><pre>".$catflag2a_output."</pre></dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php:</dt></b>";
     ECHO "<dd><pre>".$catflag2_output."</pre></dd>";
+    ECHO "<b><dt>Contents of /var/www/html/transparent/flag.php:</dt></b>";
+    ECHO "<dd><pre>".$catflag3_output."</pre></dd>";
     ECHO "<b><dt>uname -a:</b></dt>";
     ECHO "<dd>".$uname_a."</dd>";
 ?>
